@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <blockquote>
+        <input type="text" id="num1"> <br>
+        <input type="text" id="num2"> <br>
+        <button onclick="addNumber()">Add</button> <br>
+        <input type="text" id="result" disabled>
+
+
+    </blockquote>
+    <script>
+        function addNumber(){
+            let x= parseInt(document.getElementById('num1').value);
+            let y= parseInt(document.getElementById('num2').value);
+            let rs = x+y
+            document.getElementById('result').value= rs
+        }
+
+    </script>
+        <blockquote>
+            <input type="text" id="num3" > <br>
+            <input type="text" id="num4" > <br>
+            <button onclick="subtractNumber()">Subtract</button> <br>
+            <input type="text" id="result1" placeholder="Result" disabled>
+        </blockquote>
+        <script>
+            function subtractNumber() {
+                let x = parseInt(document.getElementById('num3').value);
+                let y = parseInt(document.getElementById('num4').value);
+                let rs = x - y;
+                document.getElementById('result1').value = rs;
+            }
+        </script>
+            <blockquote>
+                <input type="text" id="num5"> <br>
+                <input type="text" id="num6"> <br>
+                <button onclick="multiplyNumbers()">Multiply</button> <br>
+                <input type="text" id="result2"  disabled>
+            </blockquote>
+            <script>
+                function multiplyNumbers() {
+                    let x = parseInt(document.getElementById('num5').value);
+                    let y = parseInt(document.getElementById('num6').value);
+                    let rs = x * y;
+                    document.getElementById('result2').value = rs;
+                }
+            </script>
+                <blockquote>
+                    <input type="text" id="num7"> <br>
+                    <input type="text" id="num8"> <br>
+                    <button onclick="divideNumbers()">Divide</button> <br>
+                    <input type="text" id="result3" disabled>
+                </blockquote>
+                <script>
+                          function divideNumbers() {
+                        let x = parseFloat(document.getElementById('num7').value);
+                        let y = parseFloat(document.getElementById('num8').value);
+                        let rs = x /y;
+            document.getElementById('result3').value = rs;
+            }
+            </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+</head>
+<body>
+    <blockquote>
+        <input type="text" id="num1"> <br>
+        <input type="text" id="num2"> <br>
+        <button onclick="divideNumbers()">Divide</button> <br>
+        <input type="text" id="result" placeholder="Result" disabled>
+    </blockquote>
+    <script>
+              function divideNumbers() {
+            let x = parseFloat(document.getElementById('num1').value);
+            let y = parseFloat(document.getElementById('num2').value);
+            let rs = x /y;
+document.getElementById('result').value = rs;
+}
+</script>
+</body>
+</html>
