@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background: yellowgreen;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+</head>
+
+<body>
+  <div id="result"></div>
+  <script>
+    let student = [
+      ['ritika', 'stuti', 'shishir', 'pritika', 'rashika'],
+      ['pralisha', 'paridhi', 'prasidha', 'jayut', 'asmita'],
+      ['pratima', 'prabhat', 'prikchit', 'ganesh', 'kalpana']
+    ]
+    let resultDiv = document.getElementById('result');
+    student.flat().forEach(name => {
+      let box = document.createElement('div');
+      box.className = 'box';
+      box.textContent = name;
+      resultDiv.appendChild(box);
+    });
+  </script>
+</body>
+
+</html>
